@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity DMA is
-generic (n : integer := 5;
-m : integer := 4
+generic (n : integer := 16;
+m : integer := 20
 );
 port( enDMA,clkDMA,rst : in std_logic;
 reg0 : out std_logic_vector ( n-1 downto 0);
@@ -61,8 +61,8 @@ reg_8 : nRegister generic map(n) port map(RAM2output,reg8,dest(8),clkDMA,rst);
 reg_9 : nRegister generic map(n) port map(RAM2output,reg9,dest(9),clkDMA,rst);
 reg_10 : nRegister generic map(n) port map(RAM2output,reg10,dest(10),clkDMA,rst);
 
-my_ram1 : ram generic map(n) port map(clkDMA,'0',addressToRam1,"00000",RAM1output);
-my_ram2 : ram generic map(n) port map(clkDMA,'0',addressToRam2,"00000",RAM2output);
+my_ram1 : ram generic map(n) port map(clkDMA,'0',addressToRam1,"0000000000000000",RAM1output);
+my_ram2 : ram generic map(n) port map(clkDMA,'0',addressToRam2,"0000000000000000",RAM2output);
 
 process is 
 variable x : integer :=0;
@@ -76,12 +76,12 @@ wait for 0 ns;
 addressToRam1 <= std_logic_vector(to_unsigned(x,11));
 y := 0;
 wait until clkDMA = '1';
-while enDMA = '1' and y < 3 loop
+while enDMA = '1' and y < 10 loop
 dest <= "00000000000";
 wait for 0 ns;       
 dest(y+1) <= '1';
 wait for 0 ns;
-addressToRam2 <= std_logic_vector(to_unsigned(x*3+y,11));
+addressToRam2 <= std_logic_vector(to_unsigned(x*10+y,11));
 wait until clkDMA = '1'; 
 y := y+1;
 end loop;
