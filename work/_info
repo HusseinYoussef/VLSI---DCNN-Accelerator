@@ -1,0 +1,578 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.0
+Eaddcounter
+Z0 w1555460196
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dE:/Projects/VHDL/VLSI---DCNN-Accelerator
+Z6 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/addCounter.vhd
+Z7 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/addCounter.vhd
+l0
+L5
+Vg4GelOdHzL00SJgYa@76c3
+!s100 l^?:Sn0V7dlIRcJTJ3Vkm3
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1555604046
+!i10b 1
+Z10 !s108 1555604046.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/addCounter.vhd|
+Z12 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/addCounter.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Aarch_ac
+R1
+R2
+R3
+R4
+DEx4 work 10 addcounter 0 22 g4GelOdHzL00SJgYa@76c3
+l21
+L11
+Vc;Y12?n;na0UNJR6999]:3
+!s100 :YGjzValjg@MnAjS9D68`0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecomparator
+Z15 w1554993067
+R3
+R4
+R5
+Z16 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/comparator.vhd
+Z17 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/comparator.vhd
+l0
+L4
+VTXoW;?KQ`U2iL`9>Q=Ka33
+!s100 ;VNNUnOK2V4;IizY]Rj<R2
+R8
+32
+Z18 !s110 1555604045
+!i10b 1
+Z19 !s108 1555604045.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/comparator.vhd|
+Z21 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/comparator.vhd|
+!i113 1
+R13
+R14
+Acompare_a
+R3
+R4
+DEx4 work 10 comparator 0 22 TXoW;?KQ`U2iL`9>Q=Ka33
+l33
+L12
+V8PdVIkRdCk?7h3ReGJRT51
+!s100 ]VPWgE^WI9hA]32B6T0GE3
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Ecounter
+Z22 w1555460430
+R1
+R2
+R3
+R4
+R5
+Z23 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/Counter.vhd
+Z24 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/Counter.vhd
+l0
+L5
+VD^V1HCi3U:92kU=S^l00D2
+!s100 1ATzE<DILR2@<ZgE5fUe12
+R8
+32
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/Counter.vhd|
+Z26 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/Counter.vhd|
+!i113 1
+R13
+R14
+Aarch_c
+R1
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 D^V1HCi3U:92kU=S^l00D2
+l20
+L10
+VLVkMB13_f636:;czZAhC41
+!s100 4GCn7e:bV=f_Pi8SYfY[52
+R8
+32
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 1
+R13
+R14
+Edma
+Z27 w1555461384
+Z28 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z29 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/DMA.vhd
+Z30 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/DMA.vhd
+l0
+L5
+V6Unc[A9fA6JGFeY@ZoT<G3
+!s100 5^oRl[5o7a5PkJMa_ElU[0
+R8
+32
+R9
+!i10b 1
+R10
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/DMA.vhd|
+Z32 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/DMA.vhd|
+!i113 1
+R13
+R14
+Adma_a
+R28
+R3
+R4
+DEx4 work 3 dma 0 22 6Unc[A9fA6JGFeY@ZoT<G3
+l78
+L27
+VzdijVCb6LRiD1ZGPIJXea3
+!s100 @<MKBESdI;iCWgohle7hP2
+R8
+32
+R9
+!i10b 1
+R10
+R31
+R32
+!i113 1
+R13
+R14
+Efc
+Z33 w1555603761
+R3
+R4
+R5
+Z34 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/FC.vhd
+Z35 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/FC.vhd
+l0
+L4
+V3^fbn@MRjPQzjO7A`9geP1
+!s100 7`ZJaV;akhZ@gEZPE?Yi?1
+R8
+32
+R9
+!i10b 1
+R10
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/FC.vhd|
+Z37 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/FC.vhd|
+!i113 1
+R13
+R14
+Aflow
+R3
+R4
+DEx4 work 2 fc 0 22 3^fbn@MRjPQzjO7A`9geP1
+l95
+L15
+VIi?g:[kLoBX1^2GUd8ahl3
+!s100 U03W6=<?2Zh6=Z0a0;78_0
+R8
+32
+R9
+!i10b 1
+R10
+R36
+R37
+!i113 1
+R13
+R14
+Emax
+Z38 w1555603365
+R3
+R4
+R5
+Z39 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/max.vhd
+Z40 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/max.vhd
+l0
+L4
+V`]6<0^i8Z6fzk`[3S>HGd2
+!s100 ZKGiU^5]QA_SRB04Nio1R1
+R8
+32
+R9
+!i10b 1
+R10
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/max.vhd|
+Z42 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/max.vhd|
+!i113 1
+R13
+R14
+Amax_a
+R3
+R4
+DEx4 work 3 max 0 22 `]6<0^i8Z6fzk`[3S>HGd2
+l66
+L20
+V9=BGXI]43<nDg71IkFk1I3
+!s100 lD]JBZ84n0BfnTN2gEgaN3
+R8
+32
+R9
+!i10b 1
+R10
+R41
+R42
+!i113 1
+R13
+R14
+Emultiplier
+Z43 w1555466794
+R3
+R4
+R5
+Z44 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/Multiplier.vhd
+Z45 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/Multiplier.vhd
+l0
+L4
+VA=HU53I9KMlgMN[DOL87W1
+!s100 cK[fY]Afc?BjjIe^VKdLj2
+R8
+32
+R9
+!i10b 1
+R10
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/Multiplier.vhd|
+Z47 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/Multiplier.vhd|
+!i113 1
+R13
+R14
+Aflow
+Z48 DEx4 work 9 my_nadder 0 22 XBU;0jEDf^9O0W[30BLRO1
+R3
+R4
+DEx4 work 10 multiplier 0 22 A=HU53I9KMlgMN[DOL87W1
+l27
+L13
+VTl[KH`P8II^OO3oSi7Nc32
+!s100 hdiO[^RCb1a]H2nl;9CgT3
+R8
+32
+R9
+!i10b 1
+R10
+R46
+R47
+!i113 1
+R13
+R14
+Emy_adder
+R15
+R3
+R4
+R5
+Z49 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_adder.vhd
+Z50 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/my_adder.vhd
+l0
+L4
+VZ<JPI6PAm4c51_YX>JXT;2
+!s100 D4AeJfzW@oo7^YSg9PHk[0
+R8
+32
+R9
+!i10b 1
+R10
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_adder.vhd|
+Z52 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_adder.vhd|
+!i113 1
+R13
+R14
+Aa_my_adder
+R3
+R4
+Z53 DEx4 work 8 my_adder 0 22 Z<JPI6PAm4c51_YX>JXT;2
+l11
+L10
+Vk?Vd2;=UgQck0bm9W`kGo3
+!s100 G8If;kOT0:P@P<6e5^OId3
+R8
+32
+R9
+!i10b 1
+R10
+R51
+R52
+!i113 1
+R13
+R14
+Emy_nadder
+Z54 w1555601281
+R3
+R4
+R5
+Z55 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_nadder.vhd
+Z56 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/my_nadder.vhd
+l0
+L5
+VXBU;0jEDf^9O0W[30BLRO1
+!s100 a@OLMiQO?]P4Gn`V<akUC1
+R8
+32
+R9
+!i10b 1
+R10
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_nadder.vhd|
+Z58 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_nadder.vhd|
+!i113 1
+R13
+R14
+Aa_my_nadder
+R53
+R3
+R4
+R48
+l15
+L13
+VFekLDjGSTIORFG1U>b9TV3
+!s100 HKjWZOfAW@EC;NVg9NmGo1
+R8
+32
+R9
+!i10b 1
+R10
+R57
+R58
+!i113 1
+R13
+R14
+Enregister
+Z59 w1555463245
+R3
+R4
+R5
+Z60 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/nRegister.vhd
+Z61 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/nRegister.vhd
+l0
+L4
+V9XAci@M=3_ibfSYT[B=f<0
+!s100 Y@I[zCDCf4NgTXS:1YjF?0
+R8
+32
+R9
+!i10b 1
+R10
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/nRegister.vhd|
+Z63 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/nRegister.vhd|
+!i113 1
+R13
+R14
+Aa_nregister
+R3
+R4
+DEx4 work 9 nregister 0 22 9XAci@M=3_ibfSYT[B=f<0
+l13
+L12
+V?L12Nel5[L`Q>CbFeWUUJ3
+!s100 JOb=VB_heKn3D5<SVTeYE2
+R8
+32
+R9
+!i10b 1
+R10
+R62
+R63
+!i113 1
+R13
+R14
+Eram
+Z64 w1555457576
+R28
+R3
+R4
+R5
+Z65 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/ram.vhd
+Z66 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/ram.vhd
+l0
+L4
+V1J<>Rh42kKma3_dP42_4`1
+!s100 CI7iL2?abXAKP703PI`7@0
+R8
+32
+R18
+!i10b 1
+R19
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/ram.vhd|
+Z68 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/ram.vhd|
+!i113 1
+R13
+R14
+Aram_a
+R28
+R3
+R4
+DEx4 work 3 ram 0 22 1J<>Rh42kKma3_dP42_4`1
+l25
+L14
+V9>:OM1F@4oEzFU[5`X0Sl0
+!s100 UJg>>Q4aazHz>hMQ37OB01
+R8
+32
+R18
+!i10b 1
+R19
+R67
+R68
+!i113 1
+R13
+R14
+Eramcounter
+Z69 w1555454964
+R1
+R2
+R3
+R4
+R5
+Z70 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/ramCounter.vhd
+Z71 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/ramCounter.vhd
+l0
+L5
+V@`4HA]7J8lbB0FH=62eMo0
+!s100 Ol9RR^aE1hAJ29<WBU7GO0
+R8
+32
+R9
+!i10b 1
+R10
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/ramCounter.vhd|
+Z73 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/ramCounter.vhd|
+!i113 1
+R13
+R14
+Aarch_rc
+R1
+R2
+R3
+R4
+Z74 DEx4 work 10 ramcounter 0 22 @`4HA]7J8lbB0FH=62eMo0
+l14
+L10
+Z75 VOW[>kojbL1:IXBd>DP:0N0
+Z76 !s100 b;=ncC`U<ke_V7[;A_T9C2
+R8
+32
+R9
+!i10b 1
+R10
+R72
+R73
+!i113 1
+R13
+R14
+Etenclkcounter
+Z77 w1555456912
+R1
+R2
+R3
+R4
+R5
+Z78 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/tenClkCounter.vhd
+Z79 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/tenClkCounter.vhd
+l0
+L5
+VHAJ85^DCYV2=oOADC^G?Y1
+!s100 ]j^Olf3ZVD<<?NY=zlV^T1
+R8
+32
+R9
+!i10b 1
+R10
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/tenClkCounter.vhd|
+Z81 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/tenClkCounter.vhd|
+!i113 1
+R13
+R14
+Aarch_tc
+R1
+R2
+R3
+R4
+DEx4 work 13 tenclkcounter 0 22 HAJ85^DCYV2=oOADC^G?Y1
+l27
+L12
+VPf_jOd4lN7XleBKl@3<HU2
+!s100 jjzh7UY6AaNR11d?Z6Y<91
+R8
+32
+R9
+!i10b 1
+R10
+R80
+R81
+!i113 1
+R13
+R14
+Etwocomp
+R15
+R3
+R4
+R5
+Z82 8E:/Projects/VHDL/VLSI---DCNN-Accelerator/two's compliment.vhd
+Z83 FE:/Projects/VHDL/VLSI---DCNN-Accelerator/two's compliment.vhd
+l0
+L4
+VmYJ9Y]l7^kj^jMR@:KWn20
+!s100 MBFSV4YbmQz:;JY1TlEQO1
+R8
+32
+R18
+!i10b 1
+R19
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Projects/VHDL/VLSI---DCNN-Accelerator/two's compliment.vhd|
+Z85 !s107 E:/Projects/VHDL/VLSI---DCNN-Accelerator/two's compliment.vhd|
+!i113 1
+R13
+R14
+Acomp_a
+R3
+R4
+DEx4 work 7 twocomp 0 22 mYJ9Y]l7^kj^jMR@:KWn20
+l23
+L11
+VH]@>JdSdk7]:>jBW^C>5i0
+!s100 Ve5>FALf;hoE2hBM:GF1n1
+R8
+32
+R18
+!i10b 1
+R19
+R84
+R85
+!i113 1
+R13
+R14

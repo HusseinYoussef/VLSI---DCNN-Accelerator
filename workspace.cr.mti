@@ -1,0 +1,125 @@
+E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_nadder.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_nadder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_nadder
+-- Compiling architecture a_my_nadder of my_nadder
+-- Loading entity my_adder
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/my_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity my_adder
+-- Compiling architecture a_my_adder of my_adder
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/Multiplier.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/Multiplier.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Multiplier
+-- Compiling architecture Flow of Multiplier
+-- Loading entity my_nadder
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/comparator.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/comparator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator
+-- Compiling architecture compare_a of comparator
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/ram.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture ram_a of ram
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/tenClkCounter.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/tenClkCounter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tenClkCounter
+-- Compiling architecture arch_tc of tenClkCounter
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/addCounter.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/addCounter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity addCounter
+-- Compiling architecture arch_ac of addCounter
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/DMA.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/DMA.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DMA
+-- Compiling architecture DMA_a of DMA
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/nRegister.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/nRegister.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity nRegister
+-- Compiling architecture a_nRegister of nRegister
+
+} {} {}} {E:/Projects/VHDL/VLSI---DCNN-Accelerator/two's compliment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {E:/Projects/VHDL/VLSI---DCNN-Accelerator/two's compliment.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity twoComp
+-- Compiling architecture Comp_a of twoComp
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/max.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/max.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity max
+-- Compiling architecture max_a of max
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/Counter.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/Counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity counter
+-- Compiling architecture arch_c of counter
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/ramCounter.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/ramCounter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ramCounter
+-- Compiling architecture arch_rc of ramCounter
+
+} {} {}} E:/Projects/VHDL/VLSI---DCNN-Accelerator/FC.vhd {1 {vcom -work work -2002 -explicit -stats=none E:/Projects/VHDL/VLSI---DCNN-Accelerator/FC.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FC
+-- Compiling architecture flow of FC
+
+} {} {}}

@@ -1,0 +1,45 @@
+# Compile of ram.vhd was successful.
+# Compile of two's compliment.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of DMA.vhd was successful.
+# Compile of max.vhd was successful.
+# Compile of Multiplier.vhd failed with 3 errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nRegister.vhd was successful.
+# Compile of FC.vhd was successful.
+# Compile of tenClkCounter.vhd was successful.
+# Compile of addCounter.vhd was successful.
+# Compile of Counter.vhd was successful.
+# Compile of ramCounter.vhd was successful.
+# 14 compiles, 1 failed with 3 errors.
+# Compile of ram.vhd was successful.
+# Compile of two's compliment.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of DMA.vhd was successful.
+# Compile of max.vhd was successful.
+# Compile of Multiplier.vhd failed with 2 errors.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nRegister.vhd was successful.
+# Compile of FC.vhd was successful.
+# Compile of tenClkCounter.vhd was successful.
+# Compile of addCounter.vhd was successful.
+# Compile of Counter.vhd was successful.
+# Compile of ramCounter.vhd was successful.
+# 14 compiles, 1 failed with 2 errors.
+# Compile of ram.vhd was successful.
+# Compile of two's compliment.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of DMA.vhd was successful.
+# Compile of max.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of my_adder.vhd was successful.
+# Compile of my_nadder.vhd was successful.
+# Compile of nRegister.vhd was successful.
+# Compile of FC.vhd was successful.
+# Compile of tenClkCounter.vhd was successful.
+# Compile of addCounter.vhd was successful.
+# Compile of Counter.vhd was successful.
+# Compile of ramCounter.vhd was successful.
+# 14 compiles, 0 failed with no errors.

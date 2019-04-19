@@ -2,9 +2,11 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.all;
 
 Entity Multiplier is
-   generic(n:integer :=15);
-    port( A,B :in std_logic_vector(n-1 downto 0);
-          F  :out std_logic_vector(n+n-1 downto 0)
+   generic(n:integer :=16);
+    port( start : in std_logic; 
+        A,B :in std_logic_vector(n-1 downto 0);
+          F  :out std_logic_vector(n+n-1 downto 0);
+          done: out std_logic
 	);
 end entity Multiplier;
 
@@ -40,5 +42,7 @@ loop3: FOR i in 1 to BigN-2 Generate
         fx:entity work.my_nadder PORT MAP (addout(i-1) , op2(i) , '0' , addout(i));
 end Generate;  
 
-F <= addout(BigN-2);
+F <= addout(BigN-2) when start='1';
+done<='1' when start='1';
+
 end Flow;

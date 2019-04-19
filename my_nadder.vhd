@@ -3,7 +3,7 @@ USE IEEE.std_logic_1164.all;
 
 
 Entity my_nadder is
-  generic(n:integer :=30);
+  generic(n:integer :=32);
     port( aa,bb :in std_logic_vector(n-1 downto 0);
           c_cin:in std_logic; 
           ff   :out std_logic_vector(n-1 downto 0)

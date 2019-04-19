@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity max is
-generic ( n : integer := 5);
+generic ( n : integer := 32);
 port(reg0 : in std_logic_vector (n-1 downto 0);
 reg1 : in std_logic_vector (n-1 downto 0);
 reg2 : in std_logic_vector (n-1 downto 0);
