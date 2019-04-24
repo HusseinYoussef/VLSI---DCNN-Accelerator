@@ -11,7 +11,14 @@ end nRegister;
 
 architecture a_nRegister of nRegister is
 begin
-outputR <= (others => '0') when rstR = '1'
-else inputR when enR = '1' and (clk'event and clk = '1');
-
+process (clk) 
+begin
+if((clk'event and clk = '1')) then
+if(rstR = '1') then
+outputR <= (others => '0');
+elsif(enR = '1') then
+outputR <= inputR;
+end if;
+end if;
+end process;
 end a_nRegister;

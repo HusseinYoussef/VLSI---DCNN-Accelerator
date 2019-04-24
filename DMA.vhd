@@ -4,11 +4,9 @@ use ieee.numeric_std.all;
 
 entity DMA is
 generic (n : integer := 16;
-m : integer := 2
+m : integer := 4
 );
 port( enDMA,clkDMA,rst : in std_logic;
-done : out std_logic;
-ramFinish : out std_logic;
 reg0 : out std_logic_vector ( n-1 downto 0);
 reg1 : out std_logic_vector ( n-1 downto 0);
 reg2 : out std_logic_vector ( n-1 downto 0);
@@ -19,7 +17,8 @@ reg6 : out std_logic_vector ( n-1 downto 0);
 reg7 : out std_logic_vector ( n-1 downto 0);
 reg8 : out std_logic_vector ( n-1 downto 0);
 reg9 : out std_logic_vector ( n-1 downto 0);
-reg10 : out std_logic_vector ( n-1 downto 0)
+reg10 : out std_logic_vector ( n-1 downto 0);
+dmfin,ramFinish : out std_logic
 );
 end DMA;
 
@@ -54,7 +53,7 @@ end component;
 component ram is
 generic (n : integer := 16);
 port(clkRam : in std_logic;
-we : in std_logic;
+we,rst : in std_logic;
 address : in std_logic_vector(10 downto 0);
 dataInRam : in std_logic_vector(n-1 downto 0);
 dataOutRam : out std_logic_vector(n-1 downto 0)
@@ -73,6 +72,7 @@ signal count2 : std_logic_vector(3 downto 0) := (others => '0');
 signal count3 : std_logic_vector(10 downto 0) := (others => '0');
 signal count4 : std_logic_vector(2 downto 0) := (others => '0');
 --signal calculate : std_logic_vector(21 downto 0) := (others => '0');
+signal finish : std_logic;
 
 
 begin
@@ -88,8 +88,8 @@ reg_8 : nRegister generic map(n) port map(RAM2output,reg8,dest(7),clkDMA,rst);
 reg_9 : nRegister generic map(n) port map(RAM2output,reg9,dest(8),clkDMA,rst);
 reg_10 : nRegister generic map(n) port map(RAM2output,reg10,dest(9),clkDMA,rst);
 
-my_ram1 : ram generic map(n) port map(clkDMA,'0',addressToRam1,"0000000000000000",RAM1output);
-my_ram2 : ram generic map(n) port map(clkDMA,'0',addressToRam2,"0000000000000000",RAM2output);
+my_ram1 : ram generic map(n) port map(clkDMA,'0',rst,addressToRam1,"0000000000000000",RAM1output);
+my_ram2 : ram generic map(n) port map(clkDMA,'0',rst,addressToRam2,"0000000000000000",RAM2output);
 
 my_counter1 : tenClkCounter generic map(11) port map(clkDMA,rst,enDMA,count1,count2);
 my_counter2 : addCounter generic map(11) port map(clkDMA,rst,enDMA,count3);
@@ -109,7 +109,25 @@ dest(7) <= '1' when count4 = "010" and count2 = "0111" and enDMA = '1' else '0';
 dest(8) <= '1' when count4 = "010" and count2 = "1000" and enDMA = '1' else '0';
 dest(9) <= '1' when count4 = "010" and count2 = "1001" and enDMA = '1' else '0';
 
-done <= '1' when count2 = "0000" and count1 /= "00000000000" else '0';
 ramFinish <= '1' when count1 = std_logic_vector(to_unsigned(m,11)) else '0'; 
+
+process(clkDMA)
+begin
+if (clkDMA'event and clkDMA='1') then
+if(count2 = "0011") then
+finish <= '1';
+end if;
+
+if(count2 = "0000" and count1 /= "00000000000" and count4 = "000" and finish = '1') then
+dmfin <= '1';
+finish <='0';
+else
+dmfin <='0';
+end if;
+end if;
+end process;
+
+--finish <= '1' when count2 = "0011" else '0' when count2 = "0000" and count1 /= "00000000000" and count4 = "000";
+--dmfin <= '1' when count2 = "0000" and count1 /= "00000000000" and count4 = "000" and finish = '1' else '0';
 
 end DMA_a;

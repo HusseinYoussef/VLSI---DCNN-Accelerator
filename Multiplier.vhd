@@ -12,6 +12,15 @@ end entity Multiplier;
 
 architecture Flow of Multiplier is
 
+component my_nadder is
+  generic(n:integer :=32);
+    port( aa,bb :in std_logic_vector(n-1 downto 0);
+          c_cin:in std_logic; 
+          ff   :out std_logic_vector(n-1 downto 0);
+	  c_cout : out std_logic
+          );
+end component;
+
 constant BigN : Integer := n+n;   -- number of Bits assigned as integer part
 
 type outs is array(0 to BigN-1) of std_logic_vector(BigN-1 downto 0);
@@ -23,6 +32,7 @@ signal Z :std_logic_vector(BigN-1 downto 0) := (others => '0');
 signal O :std_logic_vector(BigN-1 downto 0) := (others => '1');
 signal NewA : std_logic_vector(BigN-1 downto 0);
 signal NewB : std_logic_vector(BigN-1 downto 0);
+signal cout : std_logic;
 
 begin
 
@@ -37,9 +47,9 @@ loop1: FOR i in 0 to BigN-2 Generate
 end Generate;  
 
 
-f0:entity work.my_nadder PORT MAP( op1 , op2(0) ,'0' , addout(0));
+f0: my_nadder PORT MAP( op1 , op2(0) ,'0' , addout(0),cout);
 loop3: FOR i in 1 to BigN-2 Generate
-        fx:entity work.my_nadder PORT MAP (addout(i-1) , op2(i) , '0' , addout(i));
+        fx: my_nadder PORT MAP (addout(i-1) , op2(i) , '0' , addout(i),cout);
 end Generate;  
 
 F <= addout(BigN-2) when start='1';

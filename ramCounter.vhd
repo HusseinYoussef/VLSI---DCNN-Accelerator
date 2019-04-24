@@ -19,9 +19,9 @@ if (clr='1') then
 tmp <= "000";  
 elsif (clk'event and clk='1') then 
 tmp <= tmp + 1;
-end if;
-if (clk'event and clk ='1' and tmp ="010") then
+if(tmp = "010") then
 tmp <= "000";
+end if;
 end if;
 else 
 tmp <= tmp;

@@ -34,8 +34,10 @@ begin
 if(enTC = '1') then   
 if (Clear='1') then   
 temp <= (others => '0');  
-elsif (Clock'event and Clock='1' and tmp = "1001" and tmp2 = "010") then 
+elsif (Clock'event and Clock='1') then
+if (tmp = "1001" and tmp2 = "010") then 
 temp <= temp + 1;
+end if;
 end if;
 else
 temp <= temp;

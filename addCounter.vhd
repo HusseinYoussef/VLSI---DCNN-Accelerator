@@ -27,8 +27,10 @@ begin
 if (enAC = '1') then   
 if (clr='1') then   
 temp <= (Others=>'0');  
-elsif (clk'event and clk='1' and tmp = "010") then 
+elsif (clk'event and clk='1') then
+if(tmp = "010") then 
 temp <= temp + 1;
+end if;
 end if;
 else 
 temp <= temp;

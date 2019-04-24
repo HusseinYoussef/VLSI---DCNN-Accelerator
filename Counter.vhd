@@ -26,11 +26,13 @@ begin
 if (enC = '1') then   
 if (clr='1') then   
 tmp <= "0000";  
-elsif (clk'event and clk='1' and temp = "010") then 
+elsif (clk'event and clk='1') then 
+if(temp = "010") then
 tmp <= tmp + 1;
 end if;
-if (clk'event and clk ='1' and tmp ="1001" and temp = "010") then
+if (tmp ="1001" and temp = "010") then
 tmp <= "0000";
+end if;
 end if;
 else 
 tmp <= tmp;
